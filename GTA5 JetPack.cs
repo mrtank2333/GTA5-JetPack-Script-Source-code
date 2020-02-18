@@ -52,8 +52,7 @@ namespace GTA5JetPack
         public JetPack()
         {
             //自动选择语言
-            int LanguageID = Function.Call<int>(Hash._GET_UI_LANGUAGE_ID);
-            L = LanguageID;
+            int L = Function.Call<int>(Hash._GET_UI_LANGUAGE_ID);
             //读取配置文件部分
             config = ScriptSettings.Load("scripts\\JetPackSettings.ini");//读取配置文件
             OpenMenu = config.GetValue<Keys>("Options", "OpenMenu", Keys.F5); //读取热键内容
