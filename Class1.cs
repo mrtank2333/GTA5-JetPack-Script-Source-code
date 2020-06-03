@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using GTA;
 using GTA.Native;
@@ -573,10 +573,6 @@ namespace GTA5JetPack
                     Function.Call(Hash.ADD_EXPLOSION, tuple.Item1.Position.X, tuple.Item1.Position.Y, tuple.Item1.Position.Z, 4, 1, false, false, false);
                     StopFireTimer.RemoveAll(t => t.Item1.IsOnFire == false);
                     return;
-                    //FireStop2();
-                    //Model stunGunModel = new Model(WeaponHash.Molotov);
-                    //Function.Call(Hash.SHOOT_SINGLE_BULLET_BETWEEN_COORDS, tuple.Item1.Position.X + 1, tuple.Item1.Position.Y, tuple.Item1.Position.Z, tuple.Item1.Position.X, tuple.Item1.Position.Y, tuple.Item1.Position.Z, 1000, true, stunGunModel.Hash, tuple.Item1, true, false, 2000f);
-                    //Function.Call(Hash.ADD_EXPLOSION, tuple.Item1.Position.X, tuple.Item1.Position.Y, tuple.Item1.Position.Z, 4, 1, false, false, false);
                 }
             }
         }
